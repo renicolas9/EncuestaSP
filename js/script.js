@@ -25,6 +25,13 @@ function inicio() {
 		}*/
 	});
 
+
+	$('#forms-usuario').on('click',function(ev){
+		ev.preventDefault();
+		$('#forms-enviados').slideToggle();
+		
+	});
+
 	$('#close-screen').on('click',function(ev){
 		ev.preventDefault();
 		waitScreen(false);

@@ -1,4 +1,4 @@
-color_principal = #009aae; //#99CC00; //#00AEC3
+color_principal = #009AAE; //#99CC00; //#00AEC3
 color_secundario = #00b0c7;
 color_principal_hover = #08C2C7;
 //color_fuente = #404142;//372f2b 2E2E2E
@@ -70,7 +70,31 @@ body
 				    text-transform uppercase
 				    text-align center
 				    border-radius 3px
-				    
+
+nav
+	float right
+	display inline-block
+	height 85px
+	ul
+		margin 0 auto
+		height 100%
+		li 
+			display inline-block
+			color color_fondo
+			height 100%
+			margin 0
+			&.nav-sep
+				span 
+					margin 0 1em
+			p 
+				margin 0
+				display inline-block
+			a 
+				text-decoration none
+				color color_fondo
+				&:hover 
+					text-decoration none
+					color #fefefe
 /*
 div.bg-start-parent
 	margin 0
@@ -99,6 +123,7 @@ div.container-form
 	margin-bottom 10em
 	
 div.encabezado-form
+	margin-top 1.5em
 	padding 1em 0 0 0 
 	text-align center
 	position relative
@@ -372,13 +397,160 @@ div.div-textareas
 
 	
 div.banner
+	background-image url('../img/banner1.png')
+	background-size 100%
+	height 340px
 	position relative
 	background-color #F0F0F0
 	z-index 5
 	box-shadow: 0 1px 2px rgba(0,0,0,0.075), 0 3px 0 rgba(0,0,0,0.01);
-	//box-shadow: 10px 5px 5px black;
-	//box-shadow: 60px 16px teal;
-	
+	h4
+		padding-top 1em
+		color color_fuente
+		text-shadow 2px 1px 5px color_fondo
+		font-size 2em
+		font-weight bold
+	img 
+		display inline-block
+		//margin-right 2em
+		position absolute
+		top 90px
+	div.descripcion-breve
+		display block
+		margin-top 2em
+		color color_fuente
+		text-shadow 0px 0px 1px color_fondo
+		text-align center
+		font-size 1.1em
+	div.botones-banner
+		//position absolute
+		//left 435px
+		//top 250px
+		margin-top 110px
+		text-align center
+		a 
+			margin 0 0.6em 0 0.6em
+			padding 0.7em 1em
+			text-decoration none
+			width 120px !important
+			display inline-block
+			font-size 0.9em
+			font-weight bold
+			&:hover
+				text-decoration none
+			&:nth-child(1)
+				background-image url('../img/fondo-cuadrado-menu.png')
+				color color_principal
+				border 2px solid color_principal
+				background-color transparent
+				border-radius 5px
+				transition 0.1s all ease
+				&:hover
+					color color_principal
+					background-color color_fondo
+			&:nth-child(2)
+				background-image url('../img/fondo-cuadrado-menu.png')
+				color color_fondo
+				border 2px solid color_principal
+				background-color color_principal
+				border-radius 5px
+				transition 0.1s all ease
+				&:hover
+					color color_principal
+					background-color color_fondo
+
+div.user-logged
+	background-color #fefefe
+	z-index 5
+	box-shadow: 0 1px 2px rgba(0,0,0,0.075), 0 3px 0 rgba(0,0,0,0.01);
+	div.container 
+		padding-top 1em	
+	a
+		padding 0.2em 1em
+		text-decoration none
+		//font-size 0.97em
+		//font-weight bold
+		//background-image url('../img/fondo-cuadrado-menu.png')
+		color color_principal
+		border 1px solid color_principal
+		background-color transparent
+		border-radius 5px
+		transition 0.1s all ease
+		&:hover
+			text-decoration none
+			color color_fondo
+			background-color color_principal
+		
+div#forms-enviados
+	text-align center
+	padding-top 1.5em
+	padding-bottom 1.5em
+	p 
+		font-weight bold
+		padding-bottom 0.5em
+	ul 
+		list-style none
+		display inline-block
+		margin 0 auto
+		text-align center
+		li 
+			margin-top 1em
+			margin-bottom 1em
+			border-bottom 1px solid #ccc
+			width 450px
+			padding-bottom 0.8em
+			a 
+				margin-left 3em
+
+footer
+	border-top 2px solid color_principal_hover
+	background-color #F9F9F9
+	padding-bottom 3em
+	div.row-top 
+		padding-top 4em
+		vertical-align middle
+	div.redes 
+		margin-top 1.5em
+		margin 0 auto
+		margin-right 1em
+		div 
+			margin 0
+			margin-right -20px
+			padding 0
+			img 
+				width 30px
+	img.img-logo-prov
+		margin-top 6px
+	h3
+		margin 0 0 20px 0
+		font-size 22px
+		text-transform uppercase
+	p
+		margin-bottom 0.4em
+		a 
+			color #3f444a
+			font-size 14px
+			outline none !important
+			font-weight small
+			&:hover
+				text-decoration none
+				color #337ab7
+			
+
+.clearfix
+	overflow auto
+	&::after
+		content ''
+		clear both
+		display table
+
+.left 
+	float left
+
+.right 
+	float right
+
+
 div.caracteres
 	text-align right
 	p
@@ -390,88 +562,7 @@ div.caracteres
 	color orange
 	
 
-section
-	margin-bottom 3.5em
-	div
-		margin 0
-		padding 0
-		display inline-block
-		//overflow hidden
-		&:left
-			float left
-		&:right
-			float right
-		ul.sortable.list
-			li
-				padding 1.65em 1em
-				margin 0.25em
-				box-shadow 0px 0px 1px 1px color_principal
-				position relative
-				//border 1px solid #42729A
-				// background-color #EEF7FC
-				p
-					color color_principal
-					text-align center
-					vertical-align middle
-					margin 0
-					padding 0
-					margin-top -1.75em
-					font-weight bold
-					display inline-block
-					font-size 0.95em
-				img
-					width 20px
-					height 20px
-					display inline-block
-					position absolute
-					left 8px
-					top 17px
-				&:hover
-					cursor pointer
-		ul.numeracion
-			margin 0.5em
-			padding 0
-			position relative
-			li
-				position absolute
-				list-style none
-				&:nth-child(1)
-					top -314px
-					right 0px
-				&:nth-child(2)
-					top -257px
-					right -1px
-				&:nth-child(3)
-					top -200px
-					right -1px
-				&:nth-child(4)
-					top -143px
-					right -1px
-				&:nth-child(5)
-					top -86px
-					right -1px
-				&:nth-child(6)
-					top -29px
-					right -1px
-				p
-					color color_principal
-					text-align center
-					vertical-align middle
-					margin 0
-					padding 0
-					//margin-top -1.75em
-					font-weight bold
-					display inline-block
-					font-size 0.95em
-					height 18px
-					line-height 18px
-  					
-/*
-@font-face {
-	font-family: EncodeSans;
-	src: url('../fonts/EncodeSans-Regular.ttf');
-	font-weight: normal;
-}*/
+
 @font-face {
 	font-family: EncodeSans;
 	src: url('../fonts/EncodeSans-Medium.ttf');

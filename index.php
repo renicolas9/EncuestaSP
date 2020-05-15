@@ -20,12 +20,31 @@
 		<header>
 			<div class="container">
 				<img class="logo" src="img/logo_gba.svg" alt="logo">
+			<?php include('nav.php'); ?>
 			</div>
 		</header>
+
 		<div class="banner">
 			<div class="container">
 				<h4>Encuesta <strong>Software Público</strong></h4>
+				<img src="img/logosp_peq.png" alt="logo_sp">
+				<div class="descripcion-breve">
+					<p>Descripción breve.</p>
+				</div>
+				<div class="botones-banner">
+					<a href="#">MANUAL</a>
+					<a href="#">COMENZAR</a>
+				</div>
 			</div>
+		</div>
+
+		<div class="user-logged ">
+			<div class="container clearfix">
+				<div class="left"><p>Usuario autenticado: [nombreUsuario], [CUIT/CUIL]</p></div>
+				<div class="right"><a href="#" id="forms-usuario">Formularios enviados</a></div>
+
+			</div>
+			<?php include('formularios_enviados.php'); ?>
 		</div>
 		
 		<div class="back-loading" style="display: none;">
@@ -51,5 +70,7 @@
 				</div>
 			</main>
 		</div>
+
+		<?php include('footer.php'); ?>
 	</body>
 </html>

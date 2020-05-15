@@ -7,7 +7,7 @@
 		<div class="paso-inputs xl">
 
 			<div class="section-input">
-				<label class="subtitle"><span>•</span>¿EXISTE LA NECESIDAD DE ALGUN NUEVO SOFTWARE?</label><br><br>
+				<label class="subtitle"><span>•</span>¿EXISTE LA NECESIDAD DE ALGÚN NUEVO SOFTWARE?</label><br><br>
 				<select id="nuevo_software" class="datalist">
 					<?php include('combos/si_no.html'); ?>
 				</select><br>

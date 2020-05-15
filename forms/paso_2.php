@@ -11,18 +11,18 @@
 			</div>
 
 			<div class="section-input">
-				<label class="subtitle"><span>•</span>VERSION DEL SISTEMA</label><br>
+				<label class="subtitle"><span>•</span>VERSIÓN DEL SISTEMA</label><br>
 				<input class="form-control texto" placeholder="Versión del sistema" maxlength="100">
 			</div>
 
 			<div class="section-input">
-				<label class="subtitle"><span>•</span>AREAS QUE LO UTILIZAN</label><br>
+				<label class="subtitle"><span>•</span>ÁREAS QUE LO UTILIZAN</label><br>
 				<textarea name="" id="0" cols="40" rows="5" class="form-control respuesta" placeholder="Ingrese su respuesta" maxlength="1000" onkeydown="contarCaracteres(this.id,1000)" onkeyup="contarCaracteres(this.id,1000)" onblur="contarCaracteres(this.id,1000)"></textarea>
 				<div class="caracteres"><p><small>0 / 1000</small></p></div>
 			</div>
 
 			<div class="section-input">
-				<label class="subtitle"><span>•</span>¿TIENEN CONTROL DEL CODIGO FUENTE?</label><br>
+				<label class="subtitle"><span>•</span>¿TIENEN CONTROL DEL CÓDIGO FUENTE?</label><br>
 				<select id="control_codigo" class="datalist">
 					<?php include('combos/si_no.html'); ?>
 				</select> <br>
@@ -39,13 +39,13 @@
 			</div>
 
 			<div class="section-input">
-				<label class="subtitle"><span>•</span>FUNCIONALIDAD/DESCRIPCION</label><br>
+				<label class="subtitle"><span>•</span>FUNCIONALIDAD/DESCRIPCIÓN</label><br>
 				<textarea name="" id="2" cols="40" rows="5" class="form-control respuesta input-espaciado" placeholder="Ingrese su respuesta" maxlength="1000" onkeydown="contarCaracteres(this.id,1000)" onkeyup="contarCaracteres(this.id,1000)" onblur="contarCaracteres(this.id,1000)"></textarea>
 				<div class="caracteres"><p><small>0 / 1000</small></p></div>
 			</div>
 
 			<div class="section-input">
-				<label class="subtitle"><span>•</span>LENGUAJE DE PROGRAMACION</label><br>
+				<label class="subtitle"><span>•</span>LENGUAJE DE PROGRAMACIÓN</label><br>
 				<select id="lenguaje_programacion" class="datalist">
 					<?php include('combos/lenguajes_programacion.html'); ?>
 				</select>
@@ -53,7 +53,7 @@
 			</div>
 
 			<div class="section-input">
-				<label class="subtitle"><span>•</span>VERSIÓN DEL LENGUAJE DE PROGRAMACION</label><br>
+				<label class="subtitle"><span>•</span>VERSIÓN DEL LENGUAJE DE PROGRAMACIÓN</label><br>
 				<input class="form-control texto" placeholder="Versión del lenguaje de programación" maxlength="100">
 			</div>
 
@@ -80,14 +80,14 @@
 			</div>
 
 			<div class="section-input">
-				<label class="subtitle"><span>•</span>¿POSEE MANUAL TECNICO?</label><br>
+				<label class="subtitle"><span>•</span>¿POSEE MANUAL TÉCNICO?</label><br>
 				<select class="datalist">
 					<?php include('combos/si_no.html'); ?>
 				</select>
 			</div>
 
 			<div class="section-input">
-				<label class="subtitle"><span>•</span>¿POSEE MANUAL DE INSTALACION?</label><br>
+				<label class="subtitle"><span>•</span>¿POSEE MANUAL DE INSTALACIÓN?</label><br>
 				<select class="datalist">
 					<?php include('combos/si_no.html'); ?>
 				</select>
@@ -100,7 +100,7 @@
 			<div class="section-input">
 				<label class="subtitle"><small>SISTEMAS CARGADOS:</small></label>
 				<div id="sistemas-cargados">
-					<small><p>Ninguno.</p></small>
+					<small><p>Ningúno.</p></small>
 				</div>
 				<div id="hidden-sistemas-cargados" hidden>
 				</div>

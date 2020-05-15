@@ -15,7 +15,7 @@
  
 
 			<div class="section-input">
-				<label class="subtitle"><span>•</span>AREA RESPONSABLE</label><br>
+				<label class="subtitle"><span>•</span>ÁREA RESPONSABLE</label><br>
 				<input class="form-control texto" placeholder="Area responsable" maxlength="100" required>
 			</div>
 
