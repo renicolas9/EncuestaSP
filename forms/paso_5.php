@@ -6,6 +6,7 @@
 					<p class="congrats-1">Su encuesta fue completada con éxito.</p>
 					<img src="img/like.png">
 					<p class="congrats-2">¡Muchas Gracias!</p>
+					<a href="#">Descargar PDF</a>
 				</div>
 			</div>
 

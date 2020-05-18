@@ -13,6 +13,14 @@
 	
 		</div>
 
+		<div class="paso-inputs xl">
+			<div class="section-input">
+			<small><p style="text-align: justify;">La información recopilada en esta encuesta será utilizada para la confección del catálogo de
+			software, que podría ser puesto a disposición de los organismos estatales y el público en general. <br>Completar el formulario implica la aceptación de publicación de la información.</p></small>
+			</div>
+	
+		</div>
+
 		<div class="section-input-boton">
 			<div class="abs">
 				<div>

@@ -94,14 +94,20 @@ function inicio() {
 
 	$('#paso-4 button.btn-sig').on('click',function(ev){
 		ev.preventDefault();
-		$('#paso-4').fadeOut(2);
-		$('#paso-5').fadeIn("slow");
 
-		$('.encabezado-4').fadeOut(2);
-		$('.encabezado-5').fadeIn("fast");
-		$("html, body").animate({
-		    scrollTop: 0
-		}, 350);
+		var ok = confirm("¿Desea enviar la encuesta?");
+
+		if (ok){
+			$('#paso-4').fadeOut(2);
+			$('#paso-5').fadeIn("slow");
+
+			$('.encabezado-4').fadeOut(2);
+			$('.encabezado-5').fadeIn("fast");
+			$("html, body").animate({
+			    scrollTop: 0
+			}, 350);
+		}
+		
 		
 	});
 

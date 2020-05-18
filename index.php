@@ -1,5 +1,6 @@
 <?php 
-//include('config/conexion_bd.php');
+@session_start();
+include('config/conexion_bd.php');
 
 ?>
 
@@ -38,14 +39,49 @@
 			</div>
 		</div>
 
+	<?php 
+		if (isset($_SESSION['autenticado'])){
+	?>
 		<div class="user-logged ">
 			<div class="container clearfix">
-				<div class="left"><p>Usuario autenticado: [nombreUsuario], [CUIT/CUIL]</p></div>
+				<div class="left"><p>Usuario autenticado: <?php echo "<b>".@$_SESSION['nombre']."</b>, <b>".@$_SESSION['cuil']."</b>"; ?></p></div>
 				<div class="right"><a href="#" id="forms-usuario">Formularios enviados</a></div>
 
 			</div>
 			<?php include('formularios_enviados.php'); ?>
 		</div>
+
+		<div class="background">
+			<main>	
+				<div class="container">
+					<div class="container-form">
+						<?php include('forms/form_encuesta.php'); ?>
+
+					</div>
+				</div>
+			</main>
+		</div>
+	<?php 
+		} else { ?>
+		<div class="background">
+			<main>	
+				<div class="container">
+					<div class="container-form" style="margin-bottom: 5em;margin-top: 1.8em;">
+						<div class="paso">
+							<div class="paso-inputs">
+								<div class="section-input">
+									<div class="encuesta-finalizada">
+										<p class="congrats-1">Inicie sesión para realizar la encuesta</p>
+									</div>
+								</div>
+							</div>
+						</div>	
+					</div>
+				</div>
+			</main>
+		</div>
+	<?php 
+		} ?>
 		
 		<div class="back-loading" style="display: none;">
 			<!-- <div class="center-loading"> style="display: none;" -->
@@ -60,16 +96,7 @@
 			<!-- </div> -->
 		</div>
 
-		<div class="background">
-			<main>	
-				<div class="container">
-					<div class="container-form">
-						<?php include('forms/form_encuesta.php'); ?>
-
-					</div>
-				</div>
-			</main>
-		</div>
+		
 
 		<?php include('footer.php'); ?>
 	</body>
